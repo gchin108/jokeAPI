@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    color: white;
+
+}
+
+.response-area{
+    text-align: center;
+    
+}
+#cat{
+    text-align: center;
+    color: grey;
+    font: italic;
+}
+
+.content{
+    color: greenyellow;
+    margin-bottom: 10px;
+    border: rgb(187, 179, 179) solid;
+    padding: 5px;
+    font-size: large;
+
+}
+#anyButton{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+

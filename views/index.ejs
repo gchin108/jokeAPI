@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke API</title>
+    <link href="/styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="response-area">
+      <div class="content">
+
+          <% if (locals.content['joke']){ %>
+            <p><%= content['joke'] %></p>
+
+            <% }else if (locals.content['setup']){ %>
+              <p><%= content['setup'] %></p><br>
+              <p><%= content['delivery'] %></p>
+
+          <%}else{%>
+            <p><%= content['message'] %></p>
+          <%}%>
+              
+      </div>
+      <% if (locals.content['category']){ %>
+      <p id="cat"><%= content['category'] %></p>
+      <%}%>
+      <div class="form">
+        <form action="/" method="post">
+          <input type="checkbox" id="choice1" name="choice" value="Programming">
+          <label for="choice1">Programming</label>
+          
+          <input type="checkbox" id="choice2" name="choice" value="Misc">
+          <label for="choice2">Misc</label>
+      
+          <input type="checkbox" id="choice3" name="choice" value="Dark">
+          <label for="choice3">Dark</label>
+      
+          <input type="checkbox" id="choice4" name="choice" value="Pun">
+          <label for="choice4">Pun</label>
+
+          <input type="checkbox" id="choice4" name="choice" value="Spooky">
+          <label for="choice4">Spooky</label>
+
+          <input type="checkbox" id="choice4" name="choice" value="Christmas">
+          <label for="choice4">Christmas</label>
+       
+          <input type="submit" value="Submit">
+
+      </form>
+
+      <form action="/" id="anyButton">
+        <input type="submit" value="Any Joke" />
+    </form>
+
+      
+  </div>
+    </div>
+  </body>
+</html>
